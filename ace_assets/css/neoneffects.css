@@ -1,0 +1,176 @@
+  /*@import url(https://fonts.googleapis.com/css?family=Audiowide);*/
+ @font-face {
+    font-family: 'Audiowide';
+    /*src: url('roboto/Roboto-Black.ttf');*/
+        src: url('Audiowide-Regular.ttf');
+}
+.login-container {
+  background: #111;
+  border: 1px solid #191919;
+  border-radius: .4em;
+  bottom: 0;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+}
+.btn-br{border-radius: 5px;}
+h1{font-family: 'Audiowide';}
+ h1.poweron{
+ 	  font-family: 'Audiowide';
+  color: #ffffff;
+  transition: all 0.5s;
+  animation: flicker 1s ease-in-out 1 alternate, neon 1.5s ease-in-out infinite alternate;
+  animation-delay: 0s, 1s;
+}
+ h1:after {
+
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  content: "";
+  display: block;
+  pointer-events: none;
+  top: 0;
+  margin-left: 138px;
+  transform-style: flat;
+  transform: skew(20deg);
+
+  background: -moz-linear-gradient(top, hsla(0,0%,100%,0.1) 0%, hsla(0,0%,100%,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsla(0,0%,100%,0.2)), color-stop(100%,hsla(0,0%,100%,0)));
+  background: -webkit-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  background: -o-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  background: -ms-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
+  background: linear-gradient(to bottom, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  to {
+      text-shadow: 
+      0 0 3px #fff,
+      0 0 7px  #fff,
+      0 0 13px  #fff,
+      0 0 17px  #B6FF00,
+      0 0 33px  #B6FF00,
+      0 0 38px  #B6FF00,
+      0 0 48px #B6FF00,
+      0 0 63px #B6FF00;
+    }
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  2% {
+    text-shadow: none;
+  }
+
+  8% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  10% {
+    text-shadow: none;
+  }
+
+  20% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  22% {
+    text-shadow: none;
+  }
+
+  24% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  28% {
+    text-shadow: none;
+  }
+
+  32% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+
+  34% {
+    text-shadow: none;
+  }
+
+  36% {
+    text-shadow: none;
+  }
+
+  42% {
+    text-shadow: none;
+  }
+
+  100% {
+    text-shadow: 
+    0 0 2.5px #fff,
+    0 0 5px #fff,
+    0 0 7.5px #fff,
+    0 0 10px #B6FF00,
+    0 0 17.5px #B6FF00,
+    0 0 20px #B6FF00,
+    0 0 25px #B6FF00,
+    0 0 37.5px #B6FF00;
+  }
+}

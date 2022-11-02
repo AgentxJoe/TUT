@@ -1,0 +1,75 @@
+  @import url(https://fonts.googleapis.com/css?family=Quantico);
+
+
+
+.nil_1 {
+  font-family: inherit;
+  /*width: 100%;*/
+  font-size: 16px;
+  padding: 7px 4px;
+  background: transparent;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  margin: 0 0 1em 0;
+  border: 1px solid #8b1c20;
+  background: #eeeeee;
+  resize: none;
+  outline: none;
+}
+
+/*input[id="full-name"],
+input[id="email1"] {
+    height: calc(3em + 2px);
+}*/
+.nil_1::placeholder {
+  color: transparent;
+}
+
+.nil_1:placeholder-shown ~ .nil_2 {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+.nil_2,
+.nil_1:focus ~ .nil_2 {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+  background-image: linear-gradient(to bottom, #eeeeee, #eeeeee);
+  background-size: 105% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nil_1:focus ~ .nil_2 {
+  color: #8b1c20;
+}
+
+.nil_1:focus {
+  padding-bottom: 6px;
+  border: 1px solid #8b1c20;
+}
+
+.nil_1:valid {
+    border-color: green;
+}
+
+.nil_1:valid ~ .nil_2 {
+  color: green;
+}
+
+
+
+ body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+}
+/* Media Queries: Tablet Landscape */
+
